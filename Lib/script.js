@@ -22,9 +22,18 @@ fetch(url)
 function processApiData(apiData){
     console.log('Processing API data:', apiData);
     const arr = apiData.data.memes[1];
-    const arr_img = arr.url
-    const acc1 = document.getElementById('acc1');
-    acc1.innerText = arr_img
+    const arr_img_url = arr.url
+    const imgDiv = document.getElementById("acc1")
+    imgDiv.src = apiData.data.memes[1].url
+
+
+
+
+    // // const img = document.createElement('img')
+    // // let img = arr_img_url.url
+    // const acc1 = document.getElementById('acc1');
+    // acc1.src = arr_img_url.url
+    // acc1.innerText = img
 }
 
 
