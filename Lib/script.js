@@ -35,16 +35,23 @@ function processApiData(apiData){
     const imgDiv3 = document.getElementById("acc4")
     imgDiv3.src = apiData.data.memes[3].url
     
-    
+    //Adds Accordian Titles
+    const acc_title1 = document.getElementById('title')
+    let acc_title_data1 = apiData.data.memes[4];
+    acc_title1.innerText=acc_title_data1.name
 
+    const acc_title2 = document.getElementById('title1')
+    let acc_title_data2 = apiData.data.memes[1];
+    acc_title2.innerText=acc_title_data2.name
 
+    const acc_title3 = document.getElementById('title2')
+    let acc_title_data3 = apiData.data.memes[2];
+    acc_title3.innerText=acc_title_data3.name
 
+    const acc_title4 = document.getElementById('title3')
+    let acc_title_data4 = apiData.data.memes[3];
+    acc_title4.innerText=acc_title_data4.name
 
-    // // const img = document.createElement('img')
-    // // let img = arr_img_url.url
-    // const acc1 = document.getElementById('acc1');
-    // acc1.src = arr_img_url.url
-    // acc1.innerText = img
 }
 
 
