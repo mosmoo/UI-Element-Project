@@ -1,3 +1,8 @@
 body{
-    background-color: red;
+    text-align: center;
+}
+.content-Container{
+    width: 70%;
+    margin:auto;
+    margin-top:50px;
 }
