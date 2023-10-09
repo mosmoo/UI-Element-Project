@@ -1,12 +1,29 @@
-body{
+#body{
     text-align: center;
-    
+    margin-top:50px;
+    background-color: #836096;
 }
+#btn1{
+    background-color: #F0B86E;
+}
+#btn2{
+    background-color: #EBE76C;
+}
+#btn3{
+    background-color: #F0B86E;
+}
+#btn4{
+    background-color: #EBE76C;
+}
+
 .content-Container{
     width: 70%;
     margin:auto;
-    margin-top:50px;
+    margin-top:20px;
 }
 .img{
     width: 100%;
+}
+.rando{
+    width:100%;
 }

@@ -52,6 +52,16 @@ function processApiData(apiData){
     let acc_title_data4 = apiData.data.memes[3];
     acc_title4.innerText=acc_title_data4.name
 
+    const btn = document.getElementById('random')
+    btn.addEventListener("click", handleClick)
+    function handleClick(){
+        const RandomIndex= Math.floor(Math.random()*100)
+        console.log(RandomIndex)
+        console.log(apiData.data.memes[RandomIndex])
+        const imgDiv5 = document.getElementById("acc5")
+        imgDiv5.src = apiData.data.memes[RandomIndex].url
+
+    }
 }
 
 
