@@ -21,10 +21,21 @@ fetch(url)
 
 function processApiData(apiData){
     console.log('Processing API data:', apiData);
-    const arr = apiData.data.memes[1];
-    const arr_img_url = arr.url
+
+    //Adds images in each accordian
     const imgDiv = document.getElementById("acc1")
-    imgDiv.src = apiData.data.memes[1].url
+    imgDiv.src = apiData.data.memes[4].url
+
+    const imgDiv1 = document.getElementById("acc2")
+    imgDiv1.src = apiData.data.memes[1].url
+    
+    const imgDiv2 = document.getElementById("acc3")
+    imgDiv2.src = apiData.data.memes[2].url
+
+    const imgDiv3 = document.getElementById("acc4")
+    imgDiv3.src = apiData.data.memes[3].url
+    
+    
 
 
 
