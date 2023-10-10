@@ -1,3 +1,4 @@
+// API Importation
 const url ="https://api.imgflip.com/get_memes"
 fetch(url)
     .then(response => {
@@ -11,13 +12,6 @@ fetch(url)
     .catch(error => {
         console.error("Something went wrong...", error)
     })
-// const btn = document.getElementById('GenerateButton');
-
-// btn.addEventListener("click", handleClick);
-
-// function handleClick(){
-//   console.log("clicked!")
-// }
 
 function processApiData(apiData){
     console.log('Processing API data:', apiData);
